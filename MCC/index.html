@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahanama College - Monaragala | Official Web Portal</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://mahanamacc.sch.lk/images/m_crest.png" type="image/png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            800: '#710e21',
+                            900: '#580a19',
+                            950: '#38040d',
+                        },
+                        gold: {
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-gold-400 selection:text-maroon-950 overflow-x-hidden">
+
+    <!-- 1. ULTRA-MODERN LUXURY PRELOADER -->
+    <div id="preloader" class="fixed inset-0 z-[100] flex flex-col items-center justify-center">
+        <div class="preloader-glow-box">
+            <div class="preloader-ring"></div>
+            <div class="preloader-ring"></div>
+            <img src="http://mahanamacc.sch.lk/images/m_crest.png" alt="Mahanama Crest" class="preloader-crest">
+        </div>
+        <h2 class="preloader-title">MAHANAMA COLLEGE</h2>
+        <p class="preloader-subtitle">Monaragala • Sri Lanka</p>
+        
+        <div class="preloader-progress-container">
+            <div id="preloader-bar"></div>
+        </div>
+        <span id="preloader-text">0%</span>
+    </div>
+
+    <!-- 2. TOP ANNOUNCEMENT BAR -->
+    <div class="bg-maroon-950 text-slate-300 text-xs py-2 px-4 border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-phone text-gold-400"></i> +94 55 22 763 12</span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-envelope text-gold-400"></i> mahanamacc@sch.lk</span>
+                <span class="hidden lg:flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-gold-400"></i> Pottuvil Rd, Monaragala</span>
+            </div>
+            <div>
+                <a href="https://srionline.net" target="_blank" class="bg-gold-500/10 hover:bg-gold-500/20 text-gold-400 px-3 py-1 rounded border border-gold-500/30 transition flex items-center gap-1.5 font-semibold">
+                    <i class="fa-solid fa-graduation-cap"></i> Access School LMS
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. HEADER NAVIGATION -->
+    <header class="sticky top-0 z-40 glass-panel shadow-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="http://mahanamacc.sch.lk/images/logo.png" alt="Mahanama Logo" class="h-14 w-auto drop-shadow group-hover:scale-105 transition-transform">
+                <div>
+                    <h1 class="font-heading font-bold text-lg sm:text-xl text-maroon-950 tracking-tight leading-tight">MAHANAMA COLLEGE</h1>
+                    <p class="text-xs text-gold-600 font-semibold tracking-wider uppercase">Monaragala</p>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-1 xl:gap-1.5 font-semibold text-sm">
+                <a href="index.html" class="px-3 py-2 rounded-lg text-maroon-900 bg-maroon-50 transition">Home</a>
+                <a href="pages/about.html" class="px-3 py-2 rounded-lg text-slate-700 hover:text-maroon-900 hover:bg-slate-100 transition">About Us</a>
+                <a href="pages/academics.html" class="px-3 py-2 rounded-lg text-slate-700 hover:text-maroon-900 hover:bg-slate-100 transition">Academics</a>
+                <a href="pages/principals.html" class="px-3 py-2 rounded-lg text-slate-700 hover:text-maroon-900 hover:bg-slate-100 transition">Past Principals</a>
+                <a href="pages/notices.html" class="px-3 py-2 rounded-lg text-slate-700 hover:text-maroon-900 hover:bg-slate-100 transition">Notices</a>
+                <a href="pages/gallery.html" class="px-3 py-2 rounded-lg text-slate-700 hover:text-maroon-900 hover:bg-slate-100 transition">Gallery</a>
+                <a href="pages/contact.html" class="px-3 py-2 rounded-lg text-slate-700 hover:text-maroon-900 hover:bg-slate-100 transition">Contact</a>
+                <a href="pages/admin.html" class="px-4 py-2 rounded-lg font-bold bg-maroon-900 text-gold-400 hover:bg-maroon-950 shadow-sm transition ml-2">
+                    <i class="fa-solid fa-lock text-xs mr-1"></i> Portal
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 4. MAIN CONTENT & HERO CAROUSEL -->
+    <main class="space-y-16 pb-16">
+        <div class="relative h-[550px] md:h-[650px] overflow-hidden bg-maroon-950">
+            <div id="hero-slider" class="absolute inset-0 transition-all duration-1000">
+                <img id="slider-img" src="http://mahanamacc.sch.lk/images/caro5.jpg" class="w-full h-full object-cover" alt="Carousel">
+                <div class="absolute inset-0 hero-gradient"></div>
+            </div>
+
+            <div class="absolute inset-0 flex flex-col justify-center max-w-7xl mx-auto px-6 text-white space-y-4 z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/20 border border-gold-400/40 text-gold-300 text-xs sm:text-sm font-semibold uppercase tracking-widest w-fit backdrop-blur-md">
+                    <i class="fa-solid fa-award"></i> 1 (AB) National School Since 1993
+                </div>
+                <h2 class="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold max-w-3xl leading-tight hero-title-shadow text-white">
+                    Inspiring Virtue, Wisdom & Excellence
+                </h2>
+                <p class="italic text-slate-100 text-lg text-glow font-medium">"පඤ්ඤ නරානං රතනං" — Wisdom is precious to man...</p>
+                
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="pages/about.html" class="px-7 py-3.5 rounded-xl font-bold bg-gradient-to-r from-gold-500 to-amber-600 text-maroon-950 hover:from-gold-400 hover:to-amber-500 shadow-lg shadow-gold-500/20 transition">
+                        Explore History <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="pages/principals.html" class="px-7 py-3.5 rounded-xl font-bold bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 transition">
+                        Past Principals
+                    </a>
+                </div>
+            </div>
+
+            <div class="absolute bottom-6 right-6 z-20 flex gap-3">
+                <button onclick="prevSlide()" class="w-12 h-12 rounded-full glass-dark text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-maroon-950 transition">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="nextSlide()" class="w-12 h-12 rounded-full glass-dark text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-maroon-950 transition">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Quick Info Cards -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-20 relative z-30">
+                <div class="bg-white rounded-2xl p-8 shadow-xl border border-slate-100 hover-card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-maroon-50 text-maroon-900 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">School Profile</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Census No: 22069 | School No: 3449<br>Over 2,500 students and 125 qualified academic staff members.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-xl border border-slate-100 hover-card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-amber-50 text-gold-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">Proven Performance</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Consistently high O/L and A/L performance across Science, Commerce, Arts, and Tech streams.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-xl border border-slate-100 hover-card-lift">
+                    <div class="w-14 h-14 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-2">Digital Learning Hub</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Zonal Computer Resource Center, modern ICT labs, and General Information Technology suites.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-maroon-950 text-slate-400 py-12 border-t border-gold-500/20 text-center text-xs space-y-2">
+        <p class="text-gold-400 font-heading text-sm font-bold tracking-wide italic">"පඤ්ඤ නරානං රතනං" — Wisdom is precious to man...</p>
+        <p>© 2026 Mahanama College - Monaragala. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript Script Link -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Mahanama College Monaragala</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <header class="bg-white border-b py-4 px-8 flex justify-between items-center shadow-sm sticky top-0 z-40">
+        <a href="../index.html" class="flex items-center gap-3">
+            <img src="http://mahanamacc.sch.lk/images/logo.png" class="h-10" alt="Logo">
+            <span class="font-bold text-xl text-rose-900">MAHANAMA COLLEGE</span>
+        </a>
+        <nav class="hidden md:flex gap-6 text-sm font-semibold">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="academics.html">Academics</a>
+            <a href="principals.html">Past Principals</a>
+            <a href="notices.html">Notices</a>
+            <a href="gallery.html" class="text-rose-900 font-bold">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-12 px-4 space-y-8 min-h-[75vh]">
+        <div class="text-center space-y-2">
+            <span class="text-amber-600 font-bold uppercase tracking-widest text-xs">Campus Media</span>
+            <h2 class="text-3xl font-extrabold text-slate-900">Photo Gallery</h2>
+            <p class="text-slate-600">Explore our campus buildings, labs, aesthetic units, and student activities.</p>
+        </div>
+
+        <div id="gallery-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+    </main>
+
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-amber-400">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-[85vh] rounded-xl shadow-2xl object-contain" alt="Enlarged view">
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

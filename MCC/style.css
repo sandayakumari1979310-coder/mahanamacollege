@@ -1,0 +1,161 @@
+/* --- Mahanama College Upgraded CSS (High Contrast & Modern Design) --- */
+
+/* Glassmorphism Enhancements */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.08);
+}
+
+.glass-dark {
+    background: rgba(56, 4, 13, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(250, 204, 21, 0.3);
+}
+
+/* Rich Hero Gradient Overlay - Text ko crystal clear dikhane ke liye */
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(38,4,10,0.92) 0%, rgba(56,4,13,0.82) 50%, rgba(15,2,5,0.95) 100%);
+}
+
+/* Text Glow & Heavy Shadows for Readability */
+.text-glow {
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 0 25px rgba(250, 204, 21, 0.6);
+}
+
+.hero-title-shadow {
+    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.9);
+}
+
+/* Custom Card Hover Effects */
+.hover-card-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-card-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -15px rgba(88, 10, 25, 0.2);
+}
+
+/* --- Ultra-Modern Luxury Preloader --- */
+#preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: radial-gradient(circle at center, #580a19 0%, #38040d 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
+}
+
+.preloader-glow-box {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.preloader-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #facc15;
+    animation: spin 1.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+
+.preloader-ring:nth-child(2) {
+    inset: -8px;
+    border-top-color: rgba(250, 204, 21, 0.3);
+    border-bottom-color: #fde047;
+    animation: spin-reverse 2.5s linear infinite;
+}
+
+.preloader-crest {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 15px rgba(250, 204, 21, 0.6));
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.preloader-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #facc15;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(250, 204, 21, 0.5);
+}
+
+.preloader-subtitle {
+    font-size: 0.75rem;
+    color: #cbd5e1;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.preloader-progress-container {
+    width: 280px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 9999px;
+    height: 6px;
+    margin-top: 32px;
+    overflow: hidden;
+    border: 1px solid rgba(250, 204, 21, 0.25);
+    padding: 1px;
+}
+
+#preloader-bar {
+    background: linear-gradient(90deg, #ca8a04, #facc15, #fde047);
+    height: 100%;
+    width: 0%;
+    border-radius: 9999px;
+    transition: width 0.2s ease-out;
+    box-shadow: 0 0 12px rgba(250, 204, 21, 0.8);
+}
+
+#preloader-text {
+    color: #facc15;
+    font-size: 0.85rem;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Keyframe Animations */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes pulse-glow {
+    0%, 100% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.08); opacity: 1; filter: drop-shadow(0 0 25px rgba(250, 204, 21, 0.9)); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #38040d;
+}
+::-webkit-scrollbar-thumb {
+    background: #facc15;
+    border-radius: 4px;
+}
